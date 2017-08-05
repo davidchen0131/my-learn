@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#topbar {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#bbc-logo {
+    margin-top: 8px;
+    width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+
+.topbar-section {
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    height: 100%;
+}
+
+#signin-image {
+    margin-top: 2px;
+    margin-left: 12px;
+    width: 30px;
+    float: left;
+}
+
+#signin-text {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 14px;
+    left: 15px;
+}
+
+#signin-div {
+    padding-right: 100px;
+}
+
+.topbar-menu {
+    font-weight: bold;
+    font-size: 90%;
+    padding: 13px 15px 0 15px;
+    height: 27px;
+}
+
+#more-arrow {
+    width: 12px;
+    margin-left: 40px;
+}
+
+#searchbox {
+    background-color: #E4E4E4;
+    border: none;
+    height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px 0 5px 5px;
+    float: inherit;
+}
+
+#magnifying-glass {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu-bar-container {
+    background-color: #BB1919;
+    width: 100%;
+    height: 70px;
+}
+
+#menu-bar {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 8px;
+}
+
+#menu-bar-2-container {
+    background-color: #A91717;
+    width: 100%;
+}
+
+.menu-bar-2 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    left: -8px;
+}
+
+.menu-bar-2 a {
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    padding: 0px 10px;
+    border-right: 1px solid #BB4545;
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+}
+
+.menu-bar-2 a:hover {
+    text-decoration: underline;
+}
+
+.menu-bar-2 a.no-border {
+    border: none;
+}
+
+#red-more-arrow {
+    position: relative;
+    top: 12px;
+    left: -5px;
+    width: 15px;
+}
+
+#page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid #BB1919;
+    width: 110px;
+}
+
+h3 a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 a:hover {
+    color: #1167A8;
+}
+
+#article-summary {
+    color: #686868;
+    width: 300px;
+    float: left;
+}
+
+#article-summary p {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.clock {
+    width: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.topic-link {
+    text-decoration: none;
+    color: #A61B1B;
+    border-left: 1px solid #CCC;
+    padding-left: 5px;
+}
+
+.topic-link:hover {
+    color: #1167A8;
+}
+
+.date {
+    color: #686868;
+    padding: 10px;
+}
+
+#article-container {
+    float: left;
+    width: 735px;
+    border-bottom: 1px #CCC solid;
+    padding-bottom: 20px;
+}
+
+#main-article-image {
+    width: 400px;
+    margin-left: 20px;
+}
+
+#article-summary hr {
+    width: 50px;
+    border-top: 1px solid #BB1919;
+}
+
+#article-summary-related {
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+#article-summary-related a:hover {
+    color: #1167A8;
+}
+
+#watch-listen {
+    width: 360px;
+    float: right;
+    position: relative;
+    left: -50px;
+    border-left: 1px solid #CCC;
+    padding-left: 35px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.article-side-image {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.article-side-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-left: 5px;
+    float: right;
+}
+
+.article-side-link:hover {
+    color: #1167A8;
+}
+
+.side-article {
+    float: right;
+    width: 250px;
+    position: relative;
+}
+
+.side-news {
+    margin: 30px 0;
+}

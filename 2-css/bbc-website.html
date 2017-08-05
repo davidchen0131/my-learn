@@ -5,130 +5,8 @@
 
     <meta charset="UTF-8">
     <title>Technology-BBC news </title>
-    <style type="text/css">
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-        
-        #topbar {
-            width: 1200px;
-            margin: 0 auto;
-            height: 40px;
-        }
-        
-        #bbc-logo {
-            margin-top: 8px;
-            width: 80px;
-            float: left;
-            margin-right: 15px;
-        }
-        
-        .topbar-section {
-            float: left;
-            border-left: 1px #CCCCCC solid;
-            height: 100%;
-        }
-        
-        #signin-image {
-            margin-top: 2px;
-            margin-left: 12px;
-            width: 30px;
-            float: left;
-        }
-        
-        #signin-text {
-            font-size: 14px;
-            font-weight: bold;
-            position: relative;
-            top: 14px;
-            left: 15px;
-        }
-        
-        #signin-div {
-            padding-right: 100px;
-        }
-        
-        .topbar-menu {
-            font-weight: bold;
-            font-size: 90%;
-            padding: 13px 15px 0 15px;
-            height: 27px;
-        }
-        
-        #more-arrow {
-            width: 12px;
-            margin-left: 40px;
-        }
-        
-        #searchbox {
-            background-color: #E4E4E4;
-            border: none;
-            height: 20px;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 5px;
-            margin: 5px 0 5px 5px;
-            float: inherit;
-        }
-        
-        #magnifying-glass {
-            height: 30px;
-            margin-top: 5px;
-        }
-        
-        .clear {
-            clear: both;
-        }
-        
-        #menu-bar-container {
-            background-color: #BB1919;
-            width: 100%;
-            height: 70px;
-        }
-        
-        #menu-bar {
-            width: 1200px;
-            margin: 0 auto;
-        }
-        
-        h1 {
-            color: white;
-            font-size: 40px;
-            font-weight: normal;
-            padding-top: 8px;
-        }
-        
-        #menu-bar-2-container {
-            background-color: #A91717;
-            width: 100%;
-        }
-        
-        #menu-bar-2 {
-            width: 1200px;
-            margin: 0 auto;
-            height: 40px;
-            position: relative;
-            left: -8px;
-        }
-        
-        #menu-bar-2 a {
-            text-decoration: none;
-            color: white;
-            margin-top: 5px;
-            padding: 0px 10px;
-            border-right: 1px solid #BB4545;
-            position: relative;
-            top: 10px;
-            font-size: 18px;
-        }
-        
-        #menu-bar-2 a:hover {
-            text-decoration: underline;
-        }
+    <link rel="stylesheet" href="bbc.css" type="text/css">
 
-    </style>
 
 </head>
 
@@ -181,7 +59,7 @@
         </div>
 
         <div id="menu-bar-2-container">
-            <div id="menu-bar-2">
+            <div class="menu-bar-2">
 
                 <a href="">Home</a>
                 <a href="">Video</a>
@@ -195,8 +73,8 @@
                 <a href="">Entertainment &amp; Arts</a>
                 <a href="">Health</a>
                 <a href="">World News TV</a>
-
-
+                <a href="" class="no-border">More</a>
+                <img src="images/red-more-arrow.png" id="red-more-arrow" alt="">
 
 
             </div>
@@ -205,6 +83,129 @@
         </div>
 
 
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="page-container">
+
+        <div class="main-article">
+
+            <h2>Techonology</h2>
+
+            <div id="article-container">
+
+                <h3><a href="">NHS cyber-defender to appear in US court</a></h3>
+
+                <div id="article-summary">
+                    <p>Marcus Hutchins was praised for stalling ransomware but is now accused of creating other malware.</p>
+                    <p><img class="clock" src="images/clock.png" alt=""><span class="date">9 hours ago</span><a href="" class="topic-link">Technology</a></p>
+
+                    <hr>
+
+                    <p><a href="" id="article-summary-related">Related content
+NHS ransomware attack's bitcoins moved</a></p>
+
+
+                </div>
+                <img id="main-article-image" src="images/news-image.png" alt="">
+
+            </div>
+
+
+
+            <div id="watch-listen">
+                <h4>Watch/Listen</h4>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news1.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">The robot spray-painted        chimney</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">9 hours ago</span><a href="" class="topic-link">Technology</a></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news2.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">
+Hacking with Hawaiian garlands</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">3 August 2017</span><br><a href="" class="topic-link">Technology</a></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news3.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">US company offers to microchip employees</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">2 August 2017</span><br><a href="" class="topic-link">US &amp;Canada</a></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news4.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">Where hackers go to hone their skills</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">2 August 2017</span><br><a href="" class="topic-link">Technology</a></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news5.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">
+The hi-tech badges made for hackers</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">1 August 2017</span><br><a href="" class="topic-link">Technology</a></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="side-news">
+
+                    <img class="article-side-image" src="images/news6.png" alt="">
+
+                    <div class="side-article">
+
+                        <p><a href="" class="article-side-link">Drones use wi-fi to 'see' through walls</a></p>
+
+                        <p><img class="clock" src="images/clock.png" alt=""><span class="date">1 August 2017</span><br><a href="" class="topic-link">Technology</a></p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
     </div>
 
 </body>
