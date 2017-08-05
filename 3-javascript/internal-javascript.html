@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+
+
+</head>
+
+<body>
+    <p>username: <input type="text" id="username"> </p>
+
+    <p>password: <input type="text" id="password"></p>
+
+    <button id="login">log in</button>
+
+
+
+
+    <script type="text/javascript">
+        document.getElementById("login").onclick = function() {
+            var username = "";
+            username = document.getElementById("username").value;
+
+            var password = "";
+            password = document.getElementById("password").value;
+
+            if (username == "abc" & password == "123") {
+                alert("login successful");
+            } else {
+                alert("wrong user");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
