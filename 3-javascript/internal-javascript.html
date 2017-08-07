@@ -6,62 +6,28 @@
     <meta charset="UTF-8">
     <title>Javascript</title>
 
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+
+
+
 
 </head>
 
 <body>
-    <p>How many fingers are you holding up?</p>
+    <h1>Test Your Reactions</h1>
 
-    <p><select name="" id="myNumber">
-       
-       <option value="0">0</option>
-       <option value="1">1</option>
-       <option value="2">2</option>
-       <option value="3">3</option>
-       <option value="4">4</option>
-       <option value="5">5</option>
-        
-    </select></p>
+    <p>Click on the boxes and circles as quickly as you can</p>
 
-    <button id="guess">Guess!</button>
-    <script type="text/javascript">
-        function doAGuess(correctAnswer) {
-            var guess = Math.floor(Math.random() * 6);
+    <p id="demo"></p>
 
-            if (guess == correctAnswer) {
-                //Computer is correct
+    <div id="shape"></div>
 
-                return (true);
-            } else {
-                //Computer is wrong
+    <p>Your time: <span id="timer"></span></p>
 
-                return (false);
+    <script type="text/javascript" src="javascript.js"></script>
 
-
-            }
-        }
-
-        document.getElementById("guess").onclick = function() {
-            var myNumber = document.getElementById("myNumber").value;
-
-            var gotIt = false;
-
-            var numberOfGuess = 1;
-
-            while (gotIt == false) {
-
-                if (doAGuess(myNumber) == true) {
-                    gotIt = true;
-                    alert("Got it! It was a " + myNumber + ". It took me " + numberOfGuess + " guesses.");
-                } else {
-                    numberOfGuess++;
-                }
-
-
-            }
-        }
-
-    </script>
 </body>
 
 </html>
