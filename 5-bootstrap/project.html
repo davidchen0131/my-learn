@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!--    Bootstrap CSS-->
     <link rel="stylesheet" href="bootstrap-4.0.0-beta-dist/css/bootstrap.css">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
@@ -15,12 +15,13 @@
 
     <style type="text/css">
         body {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: '微軟正黑體', sans-serif !important;
             position: relative;
             overflow-y: scroll;
         }
         
         .jumbotron {
+            margin-top: 50px;
             background-image: url(images/teacover.jpg);
             color: white;
             text-align: center;
@@ -48,11 +49,11 @@
         }
         
         #map {
-            margin-top: 40px;
+            margin-top: 50px;
             text-align: center;
-            align-items: center;
+            text-align: center;
             background-color: azure;
-            padding: 20px;
+            padding: 200px;
         }
 
     </style>
@@ -60,7 +61,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#mynavbar" data-offset="100">
+<body data-spy="scroll" data-target="#mynavbar" data-offset="150">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mynavbar">
         <a class="navbar-brand" href="#">祥興</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-offset="0">
@@ -142,8 +143,8 @@
         </div>
     </div>
 
-    <div id="map">
-        <div class="d-flex flex-column justify-content-center ">
+    <div id="map" class="container-fluid">
+        <div class="class=" d-flex flex-column justify-content-center "">
             <h2>Come here!</h2>
             <p class="lead">How can I get here?</p>
             <img src="images/google-maps-2.JPG" id="googlemap" alt="">
