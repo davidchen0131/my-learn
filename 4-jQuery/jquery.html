@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+
+    <link rel="stylesheet" href="">
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header {
+            width: 100%;
+            background-color: #EEEEEE;
+            padding: 5px;
+            height: 35px;
+        }
+        
+        #logo {
+            float: left;
+            font-weight: bold;
+            font-size: 120%;
+            padding-top: 5px;
+            padding-left: 3px;
+        }
+        
+        #buttonContainer {
+            width: 250px;
+            margin: 0 auto;
+        }
+        
+        .toggleButton {
+            float: left;
+            border: 1px solid grey;
+            padding: 6px;
+            border-right: none;
+            font-size: 90%;
+        }
+        
+        #html {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        
+        #output {
+            border-right: 1px solid grey;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .active {
+            background-color: #e8f2ff;
+        }
+        
+        .highlightButton {
+            background-color: grey;
+        }
+        
+        textarea {
+            width: 50%;
+            height: 100%;
+            resize: none;
+            overflow: hidden;
+            border-top: none;
+            border-color: grey;
+        }
+        
+        .panel {
+            float: left;
+            width: 50%;
+            border-left: none;
+        }
+        
+        iframe {
+            border: none;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            CodePlayer
+        </div>
+
+        <div id="buttonContainer">
+            <div class="toggleButton active" id="html">
+                HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            <div class="toggleButton active" id="output">Output</div>
+
+        </div>
+    </div>
+
+    <div id="bodyContainer">
+
+        <textarea name="" id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p> </textarea>
+
+        <textarea name="" id="cssPanel" class="panel hidden">p{color:green;}</textarea>
+
+        <textarea name="" id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Rob";</textarea>
+
+        <iframe src="" id="outputPanel" class="panel"></iframe>
+
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#outputPanel").load(function() {
+                frames["myframes"].document.body.innerHTML = htmlValue;
+            });
+        });
+
+        function updateOutput() {
+            $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+
+            document.getElementById("#outputPanel").contentDocument.eval($("#javascriptPanel").val());
+
+
+        }
+
+
+        $(".toggleButton").hover(function() {
+            $(this).addClass("highlightButton");
+        }, function() {
+            $(this).removeClass("highlightButton");
+        });
+
+        $(".toggleButton").click(function() {
+            $(this).toggleClass("active");
+
+            $(this).removeClass("highlightButton");
+
+            var panelId = $(this).attr("id") + "Panel";
+
+            $("#" + panelId).toggleClass("hidden");
+
+            var numberOfActivePanels = 4 - $('.hidden').length;
+
+            $(".panel").width(($(window).width() / numberOfActivePanels) - 10);
+        });
+
+        $(".panel").height($(window).height() - $("#header").height() - 15);
+        $(".panel").width(($(window).width() / 2) - 10);
+
+
+
+        updateOutput();
+
+
+        $("textarea").on('change keyup paste', function() {
+            updateOutput();
+        });
+
+    </script>
+</body>
+
+</html>
